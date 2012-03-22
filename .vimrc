@@ -30,8 +30,8 @@ set foldenable              " 开始折叠
 set foldmethod=syntax       " 设置语法折叠  
 set foldcolumn=0            " 设置折叠区域的宽度  
 setlocal foldlevel=1        " 设置折叠层数为  
-set modifiable
-set write
+
+set autowriteall			" 切换文件时自动保存
 "let &termencoding=&encoding
 "set fileencodings=utf-8,gbk,ucs-bom,cp936
 
@@ -44,32 +44,42 @@ let Tlist_Use_Right_Window = 1
 
 set nocp
 filetype plugin on
-let OmniCpp_GlobalScopeSearch = 1
-let OmniCpp_NamespaceSearch = 1
-let OmniCpp_DisplayMode = 0
-let OmniCpp_ShowScopeInAbbr = 0
-let OmniCpp_ShowPrototypeInAbbr = 0
-let OmniCpp_ShowAccess = 1
-let OmniCpp_DefaultNamespaces = ["std"]
-let OmniCpp_MayCompleteDot = 1
-let OmniCpp_MayCompleteArrow = 1
-let OmniCpp_MayCompleteScope = 0
-let OmniCpp_SelectFirstItem = 0
+"let OmniCpp_NamespaceSearch = 1
+"let OmniCpp_DisplayMode = 1
+"let OmniCpp_ShowScopeInAbbr = 0
+"let OmniCpp_ShowPrototypeInAbbr = 1
+"let OmniCpp_ShowAccess = 1
+"let OmniCpp_DefaultNamespaces = ["std"]
+"let OmniCpp_MayCompleteDot = 1
+"let OmniCpp_MayCompleteArrow = 1
+"let OmniCpp_MayCompleteScope = 0
+"let OmniCpp_SelectFirstItem = 0
 
+"-- omnicppcomplete setting -- 
+set completeopt=menu,menuone 
+let OmniCpp_MayCompleteDot = 1 " autocomplete with . 
+let OmniCpp_MayCompleteArrow = 1 " autocomplete with -> 
+let OmniCpp_MayCompleteScope = 1 " autocomplete with :: 
+let OmniCpp_SelectFirstItem = 2 " select first item (but don't insert) 
+let OmniCpp_NamespaceSearch = 2 " search namespaces in this and included files 
+let OmniCpp_ShowPrototypeInAbbr = 1 " show function prototype in popup window 
+let OmniCpp_GlobalScopeSearch=1 
+let OmniCpp_DisplayMode=1 
+let OmniCpp_DefaultNamespaces=["std"]
 
 set tags+=/usr/include/sys/systags
 set tags+=~/.vim/stdc++tags
 set tags+=/usr/include/nettags
-set tags+=/cygdrive/d/Main_uWorldServer/unig2/uworld1.60/tags
+set tags+=/cygdrive/d/MainuWorldServer/unig2/uworld1.60/tags
 
 set cindent
 map fg : Dox<cr>
-let g:DoxygenToolkit_briefTag_pre="@function  "
-let g:DoxygenToolkit_paramTag_pre="@Param "
-let g:DoxygenToolkit_returnTag="@Returns   "
+let g:DoxygenToolkit_briefTag_pre="@function:"
+let g:DoxygenToolkit_paramTag_pre="@Param	:"
+let g:DoxygenToolkit_returnTag="@Returns :"
 let g:DoxygenToolkit_blockHeader="--------------------------------------------------------------------------"
 let g:DoxygenToolkit_blockFooter="----------------------------------------------------------------------------"
 let g:DoxygenToolkit_authorName="linx"
 let g:DoxygenToolkit_licenseTag="My own license \<enter>"             
 
-map <F5> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --languages=c++ .<CR>
+map <F2> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --languages=c++ .<CR>
