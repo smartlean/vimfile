@@ -31,7 +31,6 @@ set foldmethod=syntax       " 设置语法折叠
 set foldcolumn=0            " 设置折叠区域的宽度  
 setlocal foldlevel=1        " 设置折叠层数为  
 set modifiable
-set write
 "let &termencoding=&encoding
 "set fileencodings=utf-8,gbk,ucs-bom,cp936
 
