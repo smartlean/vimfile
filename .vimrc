@@ -37,7 +37,7 @@ set autowriteall			" 切换文件时自动保存
 
 filetype plugin on  
 map <F3> :silent! Tlist<CR>  
-let Tlist_Ctags_Cmd = '/usr/bin/ctags.exe'  
+let Tlist_Ctags_Cmd = '/usr/bin/ctags'  
 let Tlist_Show_One_File = 1  
 let Tlist_Exit_OnlyWindow = 1  
 let Tlist_Use_Right_Window = 1  
@@ -71,6 +71,7 @@ set tags+=/usr/include/sys/systags
 set tags+=~/.vim/stdc++tags
 set tags+=/usr/include/nettags
 set tags+=/cygdrive/d/MainuWorldServer/unig2/uworld1.60/tags
+set tags+=/data/server/developers20/developers/linx/usrv/unig2/uworldServer1.60/tags
 
 set cindent
 map fg : Dox<cr>
