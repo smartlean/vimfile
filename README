@@ -1,3 +1,4 @@
+VIM常用命令：
 %  跳转到配对的括号去
 [[	跳转到代码块的开头去(但要求代码块中'{'必须单独占一行)
 gD	跳转到局部变量的定义处
@@ -7,11 +8,9 @@ mx	设置书签,x只能是a-z的26个字母
 >	增加缩进,"x>"表示增加以下x行的缩进
 <	减少缩进,"x<"表示减少以下x行的缩进
 
-
-:setcscopequickfix=s-,c-,d-,i-,t-,e-
-
 :cw 调出quickFix窗口
 
+:setcscopequickfix=s-,c-,d-,i-,t-,e-
 cscope的主要功能是通过同的子命令"find"来实现的
 "cscope find"的用法:
 cs find c|d|e|f|g|i|s|t name
@@ -23,3 +22,9 @@ cs find c|d|e|f|g|i|s|t name
 6 或 e	查找本 egrep 模式
 7 或 f	查找本文件
 8 或 i	查找包含本文件的文件
+
+Omnicompletion自动补全：
+Ctrl+P  向前切换成员
+Ctrl+N	向后切换成员
+Ctrl+E	表示退出下拉窗口, 并退回到原来录入的文字
+Ctrl+Y	表示退出下拉窗口, 并接受当前选项
