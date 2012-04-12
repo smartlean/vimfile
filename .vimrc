@@ -84,3 +84,14 @@ let g:DoxygenToolkit_authorName="linx"
 let g:DoxygenToolkit_licenseTag="My own license \<enter>"             
 
 map <F2> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --languages=c++ .<CR>
+
+set nocscopeverbose
+set cscopequickfix=s-,c-,d-,i-,t-,e-	"这个是设定是否使用 quickfix 窗口来显示 cscope 结果
+map <F4> :call Do_Cscope()<CR>
+function Do_Cscope()
+	if (executable('cscope') && has("cscope"))
+		silent! execute "!find . -name '*.h' -o -name '*.c' -o -name '*.cpp' > cscope.files"
+		silent! execute "!cscope -bkq -i cscope.files"
+	endif
+endfunction
+
