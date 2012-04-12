@@ -1,3 +1,5 @@
+git pull git@github.com:smartlean/vimfile.git
+
 VIM常用命令：
 %  跳转到配对的括号去
 [[	跳转到代码块的开头去(但要求代码块中'{'必须单独占一行)
