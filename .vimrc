@@ -34,6 +34,12 @@ setlocal foldlevel=1        " 设置折叠层数为
 set autowriteall			" 切换文件时自动保存
 "let &termencoding=&encoding
 "set fileencodings=utf-8,gbk,ucs-bom,cp936
+set fileformats=unix
+set modifiable
+set write
+
+set backup
+set backupext=.bak
 
 filetype plugin on  
 map <F3> :silent! Tlist<CR>  
@@ -90,8 +96,12 @@ set cscopequickfix=s-,c-,d-,i-,t-,e-	"这个是设定是否使用 quickfix 窗口来显示 csc
 map <F4> :call Do_Cscope()<CR>
 function Do_Cscope()
 	if (executable('cscope') && has("cscope"))
-		silent! execute "!find . -name '*.h' -o -name '*.c' -o -name '*.cpp' > cscope.files"
+		"silent! execute !find . -name '*.h' -o -name '*.c' -o -name '*.cpp' >> cscope.files"
 		silent! execute "!cscope -bkq -i cscope.files"
 	endif
 endfunction
 
+"NERDTree
+filetype plugin on
+nnoremap fh :NERDTreeToggle
+let NERDTreeIgnore=['\.vim$', '\~$', '\.d$', '\.o$']
