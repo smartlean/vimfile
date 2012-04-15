@@ -32,4 +32,4 @@ Ctrl+N	向后切换成员
 Ctrl+E	表示退出下拉窗口, 并退回到原来录入的文字
 Ctrl+Y	表示退出下拉窗口, 并接受当前选项
 
-cscope.sh 用来生成绝对路径的cscope.file文件
+cscope.sh 用来生成绝对路径的cscope.file文件,统一放在/root/下，把所有公用的文件都查询到/root/cscope.file中。然后在程序当前根目录按F4快捷键就可以生成cscope.out。这里面包括了所有公用符号。
