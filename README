@@ -44,3 +44,5 @@ cscope.sh 用来生成绝对路径的cscope.file文件,统一放在/root/下，�
 vimgrep /{pattern}/[g][j] {file}...
 vimgrep /加载场景/ **/*.cpp 查找当前目录及其子目录的.cpp文件中“加载场景”符号。
 自动对齐（自动缩进）：先按V（可视行模式），然后选中要缩进的代码，按“=”符号。
+
+vim 按ctrl+s导致终端假死，可以按ctrl+q恢复。
