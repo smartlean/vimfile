@@ -1,37 +1,37 @@
 syntax on
 set number
 set nocompatible
-set cursorline              " 突出显示当前行  
-set ruler                   " 打开状态栏标尺  
-set shiftwidth=4            " 设定 << 和 >> 命令移动时的宽度为 4  
-set softtabstop=4           " 使得按退格键时可以一次删掉 4 个空格  
-set tabstop=4               " 设定 tab 长度为 4  
-set nobackup                " 覆盖文件时不备份  
-set autochdir               " 自动切换当前目录为当前文件所在的目录  
-filetype plugin indent on   " 开启插件  
-set backupcopy=yes          " 设置备份时的行为为覆盖  
-set ignorecase smartcase    " 搜索时忽略大小写，但在有一个或以上大写字母时仍保持对大小写敏感  
-set nowrapscan              " 禁止在搜索到文件两端时重新搜索  
-set incsearch               " 输入搜索内容时就显示搜索结果  
-set hlsearch                " 搜索时高亮显示被找到的文本  
-set noerrorbells            " 关闭错误信息响铃  
-set novisualbell            " 关闭使用可视响铃代替呼叫  
-set t_vb=                   " 置空错误铃声的终端代码  
-set magic                   " 设置魔术  
-set hidden                  " 允许在有未保存的修改时切换缓冲区，此时的修改由 vim 负责保存  
-set guioptions-=T           " 隐藏工具栏  
-set guioptions-=m           " 隐藏菜单栏  
-set smartindent             " 开启新行时使用智能自动缩进  
-set backspace=indent,eol,start " 不设定在插入状态无法用退格键和 Delete 键删除回车符  
-set cmdheight=1             " 设定命令行的行数为 1  
-set laststatus=2            " 显示状态栏 (默认值为 1, 无法显示状态栏)  
-set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ %c:%l/%L%)\  " 设置在状态行显示的信息  
-set foldenable              " 开始折叠  
-set foldmethod=syntax       " 设置语法折叠  
-set foldcolumn=0            " 设置折叠区域的宽度  
-setlocal foldlevel=1        " 设置折叠层数为  
+set cursorline              " 突锟斤拷锟斤拷示锟斤拷前锟斤拷  
+set ruler                   " 锟斤拷锟斤拷状态锟斤拷锟斤拷锟斤拷  
+set shiftwidth=4            " 锟借定 << 锟斤拷 >> 锟斤拷锟斤拷锟狡讹拷时锟侥匡拷锟斤拷为 4  
+set softtabstop=4           " 使锟矫帮拷锟剿革拷锟斤拷时锟斤拷锟斤拷一锟斤拷删锟斤拷 4 锟斤拷锟秸革拷  
+set tabstop=4               " 锟借定 tab 锟斤拷锟斤拷为 4  
+set nobackup                " 锟斤拷锟斤拷锟侥硷拷时锟斤拷锟斤拷锟斤拷  
+set autochdir               " 锟皆讹拷锟叫伙拷锟斤拷前目录为锟斤拷前锟侥硷拷锟斤拷锟节碉拷目录  
+filetype plugin indent on   " 锟斤拷锟斤拷锟斤拷锟斤拷  
+set backupcopy=yes          " 锟斤拷锟矫憋拷锟斤拷时锟斤拷锟斤拷为为锟斤拷锟斤拷  
+set ignorecase smartcase    " 锟斤拷锟斤拷时锟斤拷锟皆达拷小写锟斤拷锟斤拷锟斤拷锟斤拷一锟斤拷锟斤拷锟斤拷锟较达拷写锟斤拷母时锟皆憋拷锟街对达拷小写锟斤拷锟斤拷  
+set nowrapscan              " 锟斤拷止锟斤拷锟斤拷锟斤拷锟斤拷锟侥硷拷锟斤拷锟斤拷时锟斤拷锟斤拷锟斤拷锟斤拷  
+set incsearch               " 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷时锟斤拷锟斤拷示锟斤拷锟斤拷锟斤拷锟斤拷  
+set hlsearch                " 锟斤拷锟斤拷时锟斤拷锟斤拷锟斤拷示锟斤拷锟揭碉拷锟斤拷锟侥憋拷  
+set noerrorbells            " 锟截闭达拷锟斤拷锟斤拷息锟斤拷锟斤拷  
+set novisualbell            " 锟截憋拷使锟矫匡拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷  
+set t_vb=                   " 锟矫空达拷锟斤拷锟斤拷锟斤拷锟斤拷锟秸端达拷锟斤拷  
+set magic                   " 锟斤拷锟斤拷魔锟斤拷  
+set hidden                  " 锟斤拷锟斤拷锟斤拷锟斤拷未锟斤拷锟斤拷锟斤拷锟睫革拷时锟叫伙拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷时锟斤拷锟睫革拷锟斤拷 vim 锟斤拷锟金保达拷  
+set guioptions-=T           " 锟斤拷锟截癸拷锟斤拷锟斤拷  
+set guioptions-=m           " 锟斤拷锟截菜碉拷锟斤拷  
+set smartindent             " 锟斤拷锟斤拷锟斤拷锟斤拷时使锟斤拷锟斤拷锟斤拷锟皆讹拷锟斤拷锟斤拷  
+set backspace=indent,eol,start " 锟斤拷锟借定锟节诧拷锟斤拷状态锟睫凤拷锟斤拷锟剿革拷锟斤拷锟斤拷 Delete 锟斤拷删锟斤拷锟截筹拷锟斤拷  
+set cmdheight=1             " 锟借定锟斤拷锟斤拷锟叫碉拷锟斤拷锟斤拷为 1  
+set laststatus=2            " 锟斤拷示状态锟斤拷 (默锟斤拷值为 1, 锟睫凤拷锟斤拷示状态锟斤拷)  
+set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ %c:%l/%L%)\  " 锟斤拷锟斤拷锟斤拷状态锟斤拷锟斤拷示锟斤拷锟斤拷息  
+set foldenable              " 锟斤拷始锟桔碉拷  
+set foldmethod=syntax       " 锟斤拷锟斤拷锟斤法锟桔碉拷  
+set foldcolumn=0            " 锟斤拷锟斤拷锟桔碉拷锟斤拷锟斤拷锟侥匡拷锟斤拷  
+setlocal foldlevel=1        " 锟斤拷锟斤拷锟桔碉拷锟斤拷锟斤拷为  
 
-set autowriteall			" 切换文件时自动保存
+set autowriteall			" 锟叫伙拷锟侥硷拷时锟皆讹拷锟斤拷锟斤拷
 "let &termencoding=&encoding
 "set fileencodings=utf-8,gbk,ucs-bom,cp936
 set fileformats=unix
@@ -92,7 +92,7 @@ let g:DoxygenToolkit_licenseTag="My own license \<enter>"
 map <F2> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --languages=c++ .<CR>
 
 set nocscopeverbose
-set cscopequickfix=s-,c-,d-,i-,t-,e-	"这个是设定是否使用 quickfix 窗口来显示 cscope 结果
+set cscopequickfix=s-,c-,d-,i-,t-,e-	"锟斤拷锟斤拷锟斤拷锟借定锟角凤拷使锟斤拷 quickfix 锟斤拷锟斤拷锟斤拷锟斤拷示 cscope 锟斤拷锟斤拷
 map <F4> :call Do_Cscope()<CR>
 function Do_Cscope()
 	if (executable('cscope') && has("cscope"))
@@ -104,4 +104,4 @@ endfunction
 "NERDTree
 filetype plugin on
 nnoremap fh :NERDTreeToggle
-let NERDTreeIgnore=['\.vim$', '\~$', '\.d$', '\.o$']
+let NERDTreeIgnore=['\.vim$', '\~$', '\.d$', '\.o$', '\.bak$']
